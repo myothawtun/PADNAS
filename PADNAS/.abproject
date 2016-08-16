@@ -1,0 +1,45 @@
+{
+  "ProjectName": "PADNAS",
+  "ProjectGuid": "4b180cea-46dd-407e-b38d-0e9e55276175",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.PADNAS",
+  "DisplayName": "PADNAS",
+  "Author": "",
+  "Description": "PADNAS",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{4f57ac34-c93d-41e3-a4cc-f4ea52a3df24}",
+  "WP8ProductID": "{1fe6560e-ef0c-47a9-9c99-a7d4beb303ca}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.PADNAS",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
