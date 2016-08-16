@@ -1,4 +1,32 @@
-<div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+<div data-role="view" data-title="Login to PADNAS" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+    <div id="homeModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <div class="km-label-above imageListItem"> 
+                        <div class="align-center"><img src="resources/Wonman2.png"></div>
+                    </div>
+                </li>
+                <li class="form-content-item">
+                    <div class="align-left">
+                        <input id="text" data-bind="value: homeModel.fields.txtEmail" placeholder="padnas@email.com" type="email" style="color:#fff;">
+                    </div>
+                </li>
+                <li class="form-content-item">
+                    <div class="align-left">
+                        <input id="text" data-bind="value: homeModel.fields.txtPassword" placeholder="Password" type="password" style="color:#fff;">
+                    </div>
+                </li>
+            </ul>
+            <div class="button-group">
+                <a class="primary" data-role="button" data-bind="events: { click: homeModel.submit }">Login</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_homeModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_homeModel -->
+    </div>
 
     <!-- START_CUSTOM_CODE_home -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
