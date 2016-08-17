@@ -25,6 +25,9 @@
                 <a data-role="button" class="primary" data-bind="events: { click: signInViewModel.signin }">Sign In</a>
 
             </div>
+            <div class="button-group button-group-vertical"> 
+                <a href="#" onclick="app.openLink('https://www.padnas.com/forgotPassword.html');" class="link">Forgot Password?</a>
+            </div>
 
             <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
         </form>
