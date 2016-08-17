@@ -15,19 +15,17 @@
         });
     };
 
-    $(document).ready(function(){
+    $(document).ready(function() {
         var navigationShowMoreView = $('#navigation-show-more-view').find('ul'),
             allItems = $('#navigation-container-more').find('a'),
-            navigationShowMoreContent='';
+            navigationShowMoreContent = '';
 
+        allItems.each(function(index) {
+            navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
+        });
 
-            allItems.each(function(index) {
-                navigationShowMoreContent += '<li>' + allItems[index].outerHTML + '</li>';
-            });
-
-             navigationShowMoreView.html(navigationShowMoreContent);
+        navigationShowMoreView.html(navigationShowMoreContent);
     });
-
 
     app.listViewClick = function _listViewClick(item) {
         var tabstrip = app.mobileApp.view().footer.find('.km-tabstrip').data('kendoMobileTabStrip');

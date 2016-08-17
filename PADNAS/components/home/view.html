@@ -1,14 +1,13 @@
 <div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
     <div id="homeModel" class="form-view">
         <form>
-            <br/><br/><br/><br/>
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li class="form-content-item">
 
 
                     <div class="km-label-above imageListItem">
 
-                        <div class="align-center"><img src="resources/padnasLogo.png" class="logo"></div>
+                        <div class="align-center"><img src="resources/padnasLogo.png"></div>
                     </div>
                 </li>
                 <li class="form-content-item">
@@ -33,15 +32,7 @@
                     </label>
 
                 </li>
-                
-            </ul>
-
-            <div class="button-group">
-                <a class="primary" data-role="button" data-bind="events: { click: homeModel.submit }">Login</a>
-            </div>
-            
-            <ul class="form-content" data-role="listview" data-style="inset">
-                <li class="form-content-item">
+                <li>
                     <div class="editableListItem">
 
                         <div>
@@ -52,6 +43,10 @@
                     </div>
                 </li>
             </ul>
+
+            <div class="button-group">
+                <a class="primary" data-role="button" data-bind="events: { click: homeModel.submit }">Login</a>
+            </div>
         </form>
         <!-- START_CUSTOM_CODE_homeModel -->
         <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->

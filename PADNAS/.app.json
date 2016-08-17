@@ -53,9 +53,71 @@
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "startView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "imageLogo",
+              "title": "Logo",
+              "inputType": "image",
+              "titlePosition": "hidden",
+              "alignment": "center",
+              "imageUpload": "PADNAS03.png"
+            }
+          ],
+          "name": "startViewModel",
+          "submitButton": "Join now"
+        }
+      ],
+      "title": "Start View",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "authenticationView",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "padnas",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Join now",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Join now",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": false,
+          "enableRememberme": false,
+          "emailLabel": "Email",
+          "emailPlaceholder": "EMail@padnas.com",
+          "passwordLabel": "Password",
+          "passwordPlaceholder": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home"
+        }
+      ],
+      "title": "Authentication",
+      "addToNavigation": false
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "padnas",
+      "title": "PADNAS / PADNAS",
+      "source": "everlive",
+      "everliveKey": "6a9271edngh46lo9",
+      "offlineStorage": true
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
@@ -64,5 +126,5 @@
   "skin": "nova",
   "skinMainColor": "#32364c",
   "skinTextColor": "#ffffff",
-  "skinAccentColor": "#ff4350"
+  "skinAccentColor": "#e78f08"
 }
