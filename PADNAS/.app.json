@@ -86,14 +86,7 @@
           "type": "kendo-ui-mobile:authentication",
           "name": "authenticationViewModel",
           "dataProvider": "padnas",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Join now",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerNameLabel": "Name",
-          "registerLabel": "Join now",
-          "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In",
+          "enableRegistration": false,
           "enableLogout": false,
           "enableRememberme": false,
           "emailLabel": "Email",
@@ -104,7 +97,7 @@
           "signinRedirect": "home"
         }
       ],
-      "title": "Authentication",
+      "title": "Sign In",
       "addToNavigation": false
     }
   ],
