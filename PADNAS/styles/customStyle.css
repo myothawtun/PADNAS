@@ -1,0 +1,15 @@
+body {
+}
+/*---------------
+1) Home
+-----------------*/
+/* 1) Home
+-----------------*/
+.txtLarge {
+    width: 100% !important;
+    padding: 0 1em;    
+}
+.logo{
+    width: 30% !important;
+    height: auto;
+}

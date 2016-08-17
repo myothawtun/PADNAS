@@ -4,7 +4,52 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "imageLogin",
+              "title": "image",
+              "inputType": "image",
+              "titlePosition": "hidden",
+              "alignment": "center",
+              "imageUpload": "padnasLogo.png"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "textField",
+              "title": "EMail",
+              "inputType": "text",
+              "titlePosition": "hidden",
+              "inputTextType": "email",
+              "placeholder": "EMail@padnas.com"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtPassword",
+              "title": "Password",
+              "inputType": "text",
+              "titlePosition": "hidden",
+              "inputTextType": "password",
+              "placeholder": "Password"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "hyperlink",
+              "title": "Hyperlink",
+              "inputType": "link",
+              "titlePosition": "hidden",
+              "linkType": "http",
+              "linkAddress": "https://www.padnas.com/forgotPassword.html",
+              "linkText": "Forgot Password?"
+            }
+          ],
+          "name": "homeModel",
+          "submitButton": "Login"
+        }
+      ],
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
