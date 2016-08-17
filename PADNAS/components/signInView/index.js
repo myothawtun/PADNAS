@@ -1,14 +1,14 @@
 'use strict';
 
-app.authenticationView = kendo.observable({
+app.signInView = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_authenticationView
+// START_CUSTOM_CODE_signInView
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_authenticationView
+// END_CUSTOM_CODE_signInView
 (function(parent) {
     var provider = app.data.padnas,
 
@@ -25,7 +25,7 @@ app.authenticationView = kendo.observable({
             }
 
             var activeView = '.signin-view',
-                model = parent.authenticationViewModel;
+                model = parent.signInViewModel;
 
             if (provider.setup && provider.setup.offlineStorage && !app.isOnline()) {
                 $('.signin-view', 'signup-view').hide();
@@ -43,7 +43,7 @@ app.authenticationView = kendo.observable({
         },
         successHandler = function(data) {
             var redirect = signinRedirect,
-                model = parent.authenticationViewModel || {},
+                model = parent.signInViewModel || {},
                 logout = model.logout;
 
             if (logout) {
@@ -63,13 +63,13 @@ app.authenticationView = kendo.observable({
                 init();
             }
         },
-        authenticationViewModel = kendo.observable({
+        signInViewModel = kendo.observable({
             displayName: '',
             email: '',
             password: '',
             errorMessage: '',
             validateData: function(data) {
-                var model = authenticationViewModel;
+                var model = signInViewModel;
 
                 if (!data.email && !data.password) {
                     model.set('errorMessage', 'Missing credentials.');
@@ -89,7 +89,7 @@ app.authenticationView = kendo.observable({
                 return true;
             },
             signin: function() {
-                var model = authenticationViewModel,
+                var model = signInViewModel,
                     email = model.email.toLowerCase(),
                     password = model.password;
 
@@ -102,16 +102,16 @@ app.authenticationView = kendo.observable({
             }
         });
 
-    parent.set('authenticationViewModel', authenticationViewModel);
+    parent.set('signInViewModel', signInViewModel);
     parent.set('afterShow', function(e) {
         if (e && e.view && e.view.params && e.view.params.logout) {
-            authenticationViewModel.set('logout', true);
+            signInViewModel.set('logout', true);
         }
         provider.Users.currentUser().then(successHandler, init);
     });
-})(app.authenticationView);
+})(app.signInView);
 
-// START_CUSTOM_CODE_authenticationViewModel
+// START_CUSTOM_CODE_signInViewModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_authenticationViewModel
+// END_CUSTOM_CODE_signInViewModel

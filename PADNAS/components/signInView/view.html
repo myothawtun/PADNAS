@@ -1,0 +1,44 @@
+<div data-role="view" data-title="Sign In" data-layout="main" data-model="app.signInView" data-show="app.signInView.onShow" data-after-show="app.signInView.afterShow">
+    <div class="signin-view">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <div class="km-label-above imageListItem">
+                        <div class="align-center"><img src="resources/Man1.png" class="logo"></div>
+                    </div>
+                </li>
+                <li>
+                     <label class="km-label-above km-label-hidden">
+                         &nbsp;
+                        <input data-bind="value: homeModel.fields.textField" placeholder="EMail@padnas.com" type="email">
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: homeModel.fields.txtPassword" placeholder="Password" type="password">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="primary" data-bind="events: { click: signInViewModel.signin }">Sign In</a>
+
+            </div>
+
+            <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+    <!-- START_CUSTOM_CODE_signInViewModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_signInViewModel -->
+
+    <!-- START_CUSTOM_CODE_signInView -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_signInView -->
+</div>

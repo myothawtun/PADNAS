@@ -80,25 +80,24 @@
     },
     {
       "type": "kendo-ui-mobile:view",
-      "name": "authenticationView",
+      "name": "signInView",
       "components": [
         {
           "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationViewModel",
+          "name": "signInViewModel",
           "dataProvider": "padnas",
           "enableRegistration": false,
           "enableLogout": false,
           "enableRememberme": false,
           "emailLabel": "Email",
-          "emailPlaceholder": "EMail@padnas.com",
           "passwordLabel": "Password",
-          "passwordPlaceholder": "Password",
           "signinLabel": "Sign In",
           "signinRedirect": "home"
         }
       ],
       "title": "Sign In",
-      "addToNavigation": false
+      "addToNavigation": true,
+      "icon": "home"
     }
   ],
   "dataProviders": [
