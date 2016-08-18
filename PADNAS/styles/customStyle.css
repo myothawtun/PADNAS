@@ -6,6 +6,11 @@ body {
 -----------------*/
 /* 1) Common
 -----------------*/
+#firstpage
+.km-content
+{
+    background:#bfbfbf;
+}
 .txtLarge {
     width: 100% !important;
     padding: 0 1em;    
@@ -17,3 +22,4 @@ body {
 .position-right{
     float: right;
 }
+
