@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div data-role="view" id="edit-listview" data-title="Edit List" data-init="listViewInit">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="back-button" class="nav-button" data-align="left" href="components/profile/view.html" data-role="backbutton">Back</a>
+             <span data-role="view-title"></span>
+            <a  href="components/profile/view.html" class="nav-button" data-align="right" data-role="button" id="done">Done</a>
+        </div>
+    </header>
+  
+       <form>
+       
+            <ul data-role="listview" data-style="inset">
+            
+                <li>
+                     <label class="km-label-above km-label-hidden">First name
+                         &nbsp;
+                        <input data-bind="value: user.firstname"  type="text">
+                    </label>
+                </li>
+                <li>
+                     <label class="km-label-above km-label-hidden">Last name
+                         &nbsp;
+                        <input data-bind="value: user.lastname"  type="text">
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">Email address
+                        &nbsp;
+                        <input data-bind="value: user.emailaddress" type="email">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Education
+                        &nbsp;
+                        <input data-bind="value: user.education" type="text">
+                    </label>
+                </li>
+                 <li>
+                    <label class="km-label-above km-label-hidden">Position
+                        &nbsp;
+                        <input data-bind="value: user.Position" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">Company description
+                        &nbsp;
+                        <input data-bind="value: user.description" type="text">
+                    </label>
+                </li>
+                 <li>
+                    <label class="km-label-above km-label-hidden">Mobile phone
+                        &nbsp;
+                        <input data-bind="value: user.MobilePhone" type="text">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Company address
+                        &nbsp;
+                        <input data-bind="value: user.companyaddress" type="text">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Country name
+                        &nbsp;
+                        <input data-bind="value: user.name" type="text">
+                    </label>
+                </li>
+            </ul>
+
+
+            <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
+        </form>
+    
+</div>
+    
+<!--
+<div data-role="view" id="edit-detailview" data-show="detailShow" data-init="detailInit" data-title="Details">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton" id="cancel">Cancel</a>
+            <span data-role="view-title"></span>
+            <a class="nav-button" data-align="right" data-role="button" id="done">Done</a>
+        </div>
+    </header>
+
+</div>
+-->
+</body>
+</html>
