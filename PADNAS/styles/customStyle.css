@@ -1,9 +1,10 @@
 body {
 }
-/*---------------
-1) Home
+/* CONTENTS
+---------------
+1) Common
 -----------------*/
-/* 1) Home
+/* 1) Common
 -----------------*/
 .txtLarge {
     width: 100% !important;
@@ -12,4 +13,7 @@ body {
 .logo{
     width: 30% !important;
     height: auto;
+}
+.position-right{
+    float: right;
 }

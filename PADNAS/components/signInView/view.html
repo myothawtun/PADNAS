@@ -21,13 +21,20 @@
                 </li>
             </ul>
 
-            <div class="button-group button-group-vertical">
+            <div class="button-group">
                 <a data-role="button" class="primary" data-bind="events: { click: signInViewModel.signin }">Sign In</a>
 
             </div>
-            <div class="button-group button-group-vertical"> 
-                <a href="#" onclick="app.openLink('https://www.padnas.com/forgotPassword.html');" class="link">Forgot Password?</a>
+            <div class="button-group editableListItem"> 
+                <div>
+                     <a href="#" onclick="app.openLink('https://www.padnas.com/forgotPassword.html');" class="link">Forgot Password?</a>                
+                </div>
+                <div>
+                    <a href="components/signUpview/view.html" class="link position-right">Join now</a>
+                </div>
+               
             </div>
+            
 
             <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
         </form>
