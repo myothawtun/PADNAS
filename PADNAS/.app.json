@@ -98,6 +98,49 @@
       "title": "Sign In",
       "addToNavigation": true,
       "icon": "home"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "signUpview",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:form",
+          "components": [
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtName",
+              "title": "Text field",
+              "inputType": "text",
+              "titlePosition": "hidden",
+              "inputTextType": "text",
+              "placeholder": "Darrell"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtLastName",
+              "title": "Text field",
+              "inputType": "text",
+              "titlePosition": "hidden",
+              "inputTextType": "text",
+              "placeholder": "Joseph"
+            },
+            {
+              "type": "kendo-ui-mobile:field",
+              "name": "txtPwd",
+              "title": "Text field",
+              "inputType": "text",
+              "titlePosition": "hidden",
+              "inputTextType": "password",
+              "placeholder": "Password"
+            }
+          ],
+          "name": "signUpviewModel",
+          "submitButton": "Join now"
+        }
+      ],
+      "title": "Sign Up",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [
