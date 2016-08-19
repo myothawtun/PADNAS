@@ -9,17 +9,30 @@ body {
 #firstpage
 .km-content
 {
-    background:#bfbfbf;
+    background:#EE8833	 ;
 }
+/*#E76021	#FF4500 #D69929 #FF642B*/
 .txtLarge {
     width: 100% !important;
     padding: 0 1em;    
 }
 .logo{
-    width: 30% !important;
+    width: 50% !important;
     height: auto;
+	margin-top:1em;    
 }
 .position-right{
     float: right;
 }
 
+.km-nova .button-group .km-button.primary 
+{
+   background:#faa41a;
+    color:#000;
+}
+
+.km-nova .button-group .km-button.secondary
+{
+     background:#fff;
+    color:#000;
+}
