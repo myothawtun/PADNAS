@@ -2,22 +2,39 @@
     <div class="signin-view">
         <form>
             <ul data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <div class="km-label-above imageListItem">
+                        <div class="align-center"><img src="resources/Man1.png" class="logo"></div>
+                    </div>
+                </li>
                 <li>
-                    <label>Email
-                        <input type="email" data-bind="value: signInViewModel.email" required autofocus>
+                     <label class="km-label-above km-label-hidden">
+                         &nbsp;
+                        <input data-bind="value: homeModel.fields.textField" placeholder="EMail@padnas.com" type="email">
                     </label>
                 </li>
                 <li>
-                    <label>Password
-                        <input type="password" data-bind="value: signInViewModel.password" required>
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: homeModel.fields.txtPassword" placeholder="Password" type="password">
                     </label>
                 </li>
             </ul>
 
-            <div class="button-group button-group-vertical">
+            <div class="button-group">
                 <a data-role="button" class="primary" data-bind="events: { click: signInViewModel.signin }">Sign In</a>
 
             </div>
+            <div class="button-group editableListItem"> 
+                <div>
+                     <a href="#" onclick="app.openLink('https://www.padnas.com/forgotPassword.html');" class="link">Forgot Password?</a>                
+                </div>
+                <div>
+                    <a href="components/signUpview/view.html" class="link position-right">Join now</a>
+                </div>
+               
+            </div>
+            
 
             <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
         </form>
