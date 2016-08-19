@@ -1,42 +1,48 @@
-<div data-role="view" data-title="Sign In" data-layout="main" data-model="app.signInView" data-show="app.signInView.onShow" data-after-show="app.signInView.afterShow">
+
+<div data-role="view" data-title="Sign In" data-layout="main-nonav" data-model="app.signIn" data-show="app.signIn.onShow" data-after-show="app.signIn.afterShow">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="back-button" class="nav-button" data-align="left" href="components/start/view.html" data-role="backbutton">Back</a>
+             <span data-role="view-title"></span>          
+        </div>
+    </header>
     <div class="signin-view">
         <form>
             <ul data-role="listview" data-style="inset">
                 <li class="form-content-item">
                     <div class="km-label-above imageListItem">
-                        <div class="align-center"><img src="resources/Man1.png" class="logo"></div>
+                        <div class="align-center"><img src="resources/Man1.png" class="logo signinprofile"></div>
                     </div>
                 </li>
                 <li>
                      <label class="km-label-above km-label-hidden">
                          &nbsp;
-                        <input data-bind="value: homeModel.fields.textField" placeholder="EMail@padnas.com" type="email">
+                        <input data-bind="value: signInModel.fields.email" placeholder="EMail@padnas.com" type="email">
                     </label>
                 </li>
                 <li>
                     <label class="km-label-above km-label-hidden">
                         &nbsp;
-                        <input data-bind="value: homeModel.fields.txtPassword" placeholder="Password" type="password">
+                        <input data-bind="value: signInModel.fields.password" placeholder="Password" type="password">
                     </label>
                 </li>
             </ul>
 
             <div class="button-group">
-                <a data-role="button" class="primary" data-bind="events: { click: signInViewModel.signin }">Sign In</a>
+                <a href="components/home/view.html" data-role="button" class="primary" data-bind="">Sign In</a>
 
             </div>
+             
             <div class="button-group editableListItem"> 
-                <div>
-                     <a href="#" onclick="app.openLink('https://www.padnas.com/forgotPassword.html');" class="link">Forgot Password?</a>                
-                </div>
-                <div>
-                    <a href="components/signUpview/view.html" class="link position-right">Join now</a>
-                </div>
+           
+                <a href="components/home/view.html" data-role="button" class="link">Forgot Password?</a>
+                
+                    <a href="components/signUp/view.html" data-role="button" class="link position-right">Join now</a>
                
             </div>
             
 
-            <span class="status" data-bind="text: signInViewModel.errorMessage"></span>
+            <span class="status" data-bind="text: signInModel.errorMessage"></span>
         </form>
     </div>
     <div class="offline" align="center" style="display:none;">

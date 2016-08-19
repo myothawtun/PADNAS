@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+ <div data-role="layout" data-id="mobile-view" data-show="showDemoLayout">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="back-button" class="nav-button" data-align="left" href="components/profile/setting.html" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>          
+        </div>
+    </header>
+</div>
+
+<div data-role="view" data-title="Settings">
+    <header data-role="header">
+        <div data-role="navbar">
+             <a id="back-button" class="nav-button" data-align="left" href="components/profile/view.html" data-role="backbutton">Back</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+    <ul data-role="listview" data-style="inset" data-type="group">
+        <li>Account
+            <ul>
+                <li><a href="#secondview">Help Center</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#useragreement">User Agreement</a></li>
+<!--            <li><a href="#secondview">End User License Agreement</a></li>  -->
+                <li><a data-role="button" href="components/start/view.html">Sign out</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+
+
+</div>
+
+<div data-role="view" id="secondview" data-layout="mobile-view" data-title="Help Center">
+    <div><br/><br/><br/><br/>
+       <center>  <h2>Welcome to Help Center</h2></center>
+    </div>
+</div>
+
+<div data-role="view" id="privacy" data-layout="mobile-view" data-title="Privacy Policy" data-stretch="true">
+   <div><br/><br/><br/><br/>
+        <center><h2>Welcome to Privacy Policy</h2></center>
+    </div>
+</div>
+
+<div data-role="view" id="useragreement" data-layout="mobile-view" data-title="Help Center">
+    <div><br/><br/><br/><br/>
+        <center> <h2>Welcome to User Aggrement</h2></center>
+    </div>
+</div>
+
+<script>
+    var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+</script>
+</body>
+</html>

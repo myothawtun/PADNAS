@@ -4,11 +4,20 @@
 
 </head>
 <body>
-<div data-role="view" id="badges-profile" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer">
-    <img src="resources/Woman.png" class="km-thumbnail" style="width: 10em; height: 10em; margin: 2em auto; display: block; float: none;">
+<div data-role="view" id="badges-profile" data-layout="main" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer">
+    <header data-role="header">
+        <div data-role="navbar">
+             <span data-role="view-title"></span>  
+             <a data-align="right" data-role="button" class="nav-button" data-icon="settings" href="components/profile/setting.html"></a>
+        </div>
+    </header>
     
-    <ul data-role="listview" data-style="inset" data-type="group">
-        <li>Profile
+    <img src="resources/Woman.png" class="km-thumbnail" style="	width: 10em;height: 10em;margin: 2em auto;display: block;float: none;">
+    
+    <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
+        <li>               
+            Profile  
+            
             <ul>
                 <li>John Sem</li>
                 <li>john@padnas.com</li>
@@ -42,17 +51,17 @@
     </ul>
 </div>
 
-<div data-role="layout" data-id="mobile-tabstrip" data-show="showDemoLayout">
+<!-- <div data-role="layout" data-id="mobile-tabstrip" data-show="showDemoLayout">
     <header data-role="header">
         <div data-role="navbar">
-            <a id="back-button" class="nav-button" data-align="left" href="components/signInView/view.html" data-role="backbutton">Back</a>
+            <a id="back-button" class="nav-button" data-align="left" href="components/home/view.html" data-role="backbutton">Back</a>
             <span data-role="view-title"></span>
             <a data-align="right" data-role="button" class="nav-button" data-icon="edit" href="components/profile/edit.html"></a>
         </div>
     </header>
   
 </div>
-
+ -->
 
 </body>
 </html>

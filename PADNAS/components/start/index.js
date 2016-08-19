@@ -1,28 +1,30 @@
 'use strict';
 
-app.signUpview = kendo.observable({
+app.startView = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_signUpview
+// START_CUSTOM_CODE_startView
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_signUpview
+// END_CUSTOM_CODE_startView
+         /*
 (function(parent) {
-    var signUpviewModel = kendo.observable({
+    var startViewModel = kendo.observable({
         fields: {
-            txtPwd: '',
-            txtLastName: '',
-            txtName: '',
+            imageLogo: '',
         },
-        submit: function() {}
+        submit: function() {
+ 
+        }
     });
 
-    parent.set('signUpviewModel', signUpviewModel);
-})(app.signUpview);
-
-// START_CUSTOM_CODE_signUpviewModel
+    parent.set('startViewModel', startViewModel);
+})
+*/
+(app.startView);
+// START_CUSTOM_CODE_startViewModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_signUpviewModel
+// END_CUSTOM_CODE_startViewModel

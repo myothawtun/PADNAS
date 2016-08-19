@@ -1,0 +1,67 @@
+<div data-role="view" data-title="Sign Up" data-layout="main-nonav" data-model="app.signUp" data-show="app.signUp.onShow" data-after-show="app.signUp.afterShow">
+   <header data-role="header">
+        <div data-role="navbar">
+            <a id="back-button" class="nav-button" data-align="left" href="components/start/view.html" data-role="backbutton">Back</a>
+             <span data-role="view-title"></span>          
+        </div>
+    </header>
+    <div id="signUpviewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: signUpviewModel.fields.txtName" placeholder="First name" type="text">
+                    </label>
+                </li>
+                
+                <li class="form-content-item">
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: signUpviewModel.fields.txtLastName" placeholder="Last name" type="text">
+                    </label>
+                </li>
+                 <li class="form-content-item">
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: signUpviewModel.fields.txtLastName" placeholder="Email" type="email">
+                    </label>
+                </li>
+                <li class="form-content-item">
+                    <label class="km-label-above km-label-hidden">
+                        &nbsp;
+                        <input data-bind="value: signUpviewModel.fields.txtPwd" placeholder="Password" type="password">
+                    </label>
+
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a href="components/home/view.html" class="primary" data-role="button" data-bind="">Join now</a>
+            </div>
+            
+             <p class="social-txt">
+                 Connect With:       
+              
+            </p>  
+            <div class="scocial-btngroup">
+           <ul data-role="buttongroup">
+   			
+            <li><a href="#" data-role="button" class="socialbtn"><img src="resources/facebook.png" class="social-icon"/></a></li>
+    		<li><a href="#" data-role="button" class="socialbtn"><img src="resources/twitter.png" class="social-icon"/></a></li>
+  			<li><a href="#" data-role="button" class="socialbtn"><img src="resources/linkedin.png" class="social-icon"/></a></li>
+  
+			</ul>  
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_signUpviewModel -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_signUpviewModel -->
+    </div>
+
+    <!-- START_CUSTOM_CODE_signUpview -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_signUpview -->
+</div>

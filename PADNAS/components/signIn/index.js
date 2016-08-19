@@ -1,6 +1,6 @@
 'use strict';
 
-app.signInView = kendo.observable({
+app.signIn = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
@@ -25,7 +25,7 @@ app.signInView = kendo.observable({
             }
 
             var activeView = '.signin-view',
-                model = parent.signInViewModel;
+                model = parent.signInModel;
 
             if (provider.setup && provider.setup.offlineStorage && !app.isOnline()) {
                 $('.signin-view', 'signup-view').hide();
@@ -43,7 +43,7 @@ app.signInView = kendo.observable({
         },
         successHandler = function(data) {
             var redirect = signinRedirect,
-                model = parent.signInViewModel || {},
+                model = parent.signInModel || {},
                 logout = model.logout;
 
             if (logout) {
@@ -63,13 +63,13 @@ app.signInView = kendo.observable({
                 init();
             }
         },
-        signInViewModel = kendo.observable({
+        signInModel = kendo.observable({
             displayName: '',
             email: '',
             password: '',
             errorMessage: '',
             validateData: function(data) {
-                var model = signInViewModel;
+                var model = signInModel;
 
                 if (!data.email && !data.password) {
                     model.set('errorMessage', 'Missing credentials.');
@@ -89,7 +89,7 @@ app.signInView = kendo.observable({
                 return true;
             },
             signin: function() {
-                var model = signInViewModel,
+                var model = signInModel,
                     email = model.email.toLowerCase(),
                     password = model.password;
 
@@ -102,16 +102,16 @@ app.signInView = kendo.observable({
             }
         });
 
-    parent.set('signInViewModel', signInViewModel);
+    parent.set('signInModel', signInModel);
     parent.set('afterShow', function(e) {
         if (e && e.view && e.view.params && e.view.params.logout) {
-            signInViewModel.set('logout', true);
+            signInModel.set('logout', true);
         }
         provider.Users.currentUser().then(successHandler, init);
     });
-})(app.signInView);
+})(app.signIn);
 
-// START_CUSTOM_CODE_signInViewModel
+// START_CUSTOM_CODE_signInModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_signInViewModel
+// END_CUSTOM_CODE_signInModel
