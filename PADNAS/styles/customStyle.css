@@ -3,13 +3,22 @@ body {
 /* CONTENTS
 ---------------
 1) Common
+2)Signup
 -----------------*/
 /* 1) Common
 -----------------*/
 #firstpage
 .km-content
 {
-    background:#FA9A50;
+/*     background:#FA9A50; */
+	border-top:1px solid #e9eaee;
+	background: #FFFF00; /* For browsers that do not support gradients */    
+   background: -webkit-linear-gradient(left top,#FFFF00, #99FF33); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(bottom right, #FFFF00, #ffffff); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(bottom right, #C79938, #FFFFFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #FF9900, #FFFFFF); /* Standard syntax */
+	padding:43px 10px 40px;
+	color:#ffffff;
 }
 .txtLarge {
     width: 100% !important;
@@ -34,4 +43,37 @@ body {
      background:#fff;
     color:#000;
 }
+/* 2) Sign Up
+-----------------*/
+.social-txt
+{
+    float:left;
+    margin-top:1.3em!important;
+    font-size:2em;
+}
+.scocial-btngroup
+{
+    float:left;
+}
+.km-nova .km-button, .km-nova .km-buttongroup .km-button
+{
+	padding:0em;
+    margin:0em;
+ 	border:none;
 
+}
+.km-nova .km-button, .km-nova .km-buttongroup .km-button.socialbtn
+{
+    
+    background:transparent;
+    max-width:4em;
+    max-height:1em;
+  
+}
+.social-icon
+{
+    padding:0em;
+    width:50%!important;
+    border:1px solid #FF6103;
+    border-radius:20px;
+}
