@@ -3,7 +3,8 @@ body {
 /* CONTENTS
 ---------------
 1) Common
-2)Signup
+2) Signup
+3) Authentication
 -----------------*/
 /* 1) Common
 -----------------*/
@@ -43,8 +44,10 @@ body {
      background:#fff;
     color:#000;
 }
-/* 2) Sign Up
+/*-----------------
+2) Sign Up
 -----------------*/
+
 .social-txt
 {
     float:left;
@@ -77,4 +80,17 @@ body {
 .signinprofile{
       border-radius: 50%;
       width: 35% !important;
+}
+
+/*-----------------
+3) Authentication
+-----------------*/
+
+.km-button.text-only {
+    background-color: transparent;
+}
+
+.signin-view .km-button.text-only {
+    display: block;
+    margin: 0 auto 1em;
 }
