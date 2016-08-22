@@ -74,3 +74,7 @@ body {
     border:1px solid #FF6103;
     border-radius:20px;
 }
+.signinprofile{
+      border-radius: 50%;
+      width: 35% !important;
+}
