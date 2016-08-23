@@ -44,7 +44,14 @@ body {
      background:#fff;
     color:#000;
 }
-/*-----------------
+/*
+.km-nova .km-list>li {
+	padding: 0.5em 0.84em !important;
+}
+*/
+
+/*-------
+----------
 2) Sign Up
 -----------------*/
 

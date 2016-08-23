@@ -8,12 +8,12 @@
                     </div>
                 </li>
                 <li>
-                    <label>Email
+                    <label class="km-label-above km-label-hidden">
                         <input type="email" placeholder="EMail@padnas.com" data-bind="value: authenticationModel.email" required autofocus>
                     </label>
                 </li>
                 <li>
-                    <label>Password
+                    <label class="km-label-above km-label-hidden">
                         <input type="password" placeholder="Password" data-bind="value: authenticationModel.password" required>
                     </label>
                 </li>
@@ -37,20 +37,27 @@
     <div class="signup-view" style="display:none;">
         <form>
             <ul data-role="listview" data-style="inset">
-                <li>
-                    <label>Email
-                        <input type="email" data-bind="value: authenticationModel.email" required>
+                 <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="text" placeholder="Display Name" data-bind="value: authenticationModel.displayName" required autofocus>
                     </label>
                 </li>
                 <li>
-                    <label>Password
-                        <input type="password" data-bind="value: authenticationModel.password">
+                    <label class="km-label-above km-label-hidden">
+                        <input type="email" placeholder="EMail@padnas.com" data-bind="value: authenticationModel.email" required>
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="password" placeholder="Password" data-bind="value: authenticationModel.password" required>
                     </label>
                 </li>
             </ul>
             <div class="button-group button-group-vertical">
                 <a class="primary" data-role="button" data-bind="events: { click: authenticationModel.register }">Join now</a>
-                <a data-role="button" class="text-only align-right link" data-bind="events: { click: authenticationModel.toggleView }">Sign In</a>               
+                <a data-role="button" class="text-only link" data-bind="events: { click: authenticationModel.toggleView }">
+                    Already have an account? Sign In
+                </a>               
             </div>
 
             <span class="status" data-bind="text: authenticationModel.errorMessage"></span>
