@@ -13,10 +13,10 @@ body {
 /*     background:#FA9A50; */
 	border-top:1px solid #e9eaee;
 	background: #FFFF00; /* For browsers that do not support gradients */    
-   background: -webkit-linear-gradient(left top,#FFFF00, #99FF33); /* For Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(bottom right, #FFFF00, #ffffff); /* For Opera 11.1 to 12.0 */
-   background: -moz-linear-gradient(bottom right, #C79938, #FFFFFF); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #FF9900, #FFFFFF); /* Standard syntax */
+   background: -webkit-linear-gradient(#4dffb8,  #ff6600); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(#4dffb8,#ff9933); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(#4dffb8, #ff9933); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #4dffb8, #ff9933); /* Standard syntax */
 	padding:43px 10px 40px;
 	color:#ffffff;
 }
