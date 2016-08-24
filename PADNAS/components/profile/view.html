@@ -11,8 +11,89 @@
              <a data-align="right" data-role="button" class="nav-button" data-icon="settings" href="components/profile/setting.html"></a>
         </div>
     </header>
+       <form id="edit-profile-form">
+     <img src="resources/default.jpg" height="300">  
+ 		 <div class="activity-photo-upload">
+                <label for="activityPhoto">
+                    <button id="choose-file-button">
+                        <span class="icon icon-photo">  <img class="camera" src="resources/icon-photo.png"></span>
+                    </button>
+                </label>
+                <input class="camera" type="file" accept="image/*" id="activityPhoto"/>
+            </div>
     
-    <img src="resources/Woman.png" class="km-thumbnail" style="	width: 10em;height: 10em;margin: 2em auto;display: block;float: none;">
+<!--      <div class="activity-photo-upload">
+                        <label for="profile-activity-photo">
+                            <button id="profile-choose-file-button">
+                                  <img class="camera" src="resources/icon-photo.png">
+                            </button>
+                        </label>
+                        <input type="file" id="profile-activity-photo" style="display: none">
+        </div> -->
+    
+            <ul data-role="listview" data-style="inset">
+             
+               
+                  <li>   
+                     <label class="km-label-above km-label-hidden">First name
+                         &nbsp;
+                        <input data-bind="value: user.firstname"  type="text">
+                    </label>
+                </li>
+                <li>
+                     <label class="km-label-above km-label-hidden">Last name
+                         &nbsp;
+                        <input data-bind="value: user.lastname"  type="text">
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">Email address
+                        &nbsp;
+                        <input data-bind="value: user.emailaddress" type="email">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Education
+                        &nbsp;
+                        <input data-bind="value: user.education" type="text">
+                    </label>
+                </li>
+                 <li>
+                    <label class="km-label-above km-label-hidden">Position
+                        &nbsp;
+                        <input data-bind="value: user.Position" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">Company description
+                        &nbsp;
+                        <input data-bind="value: user.description" type="text">
+                    </label>
+                </li>
+                 <li>
+                    <label class="km-label-above km-label-hidden">Mobile phone
+                        &nbsp;
+                        <input data-bind="value: user.MobilePhone" type="text">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Company address
+                        &nbsp;
+                        <input data-bind="value: user.companyaddress" type="text">
+                    </label>
+                </li>
+                   <li>
+                    <label class="km-label-above km-label-hidden">Country name
+                        &nbsp;
+                        <input data-bind="value: user.name" type="text">
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </form>
+    
+    
+<!--     <img src="resources/Woman.png" class="km-thumbnail" style="	width: 10em;height: 10em;margin: 2em auto;display: block;float: none;">
     
     <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
         <li>               
@@ -49,19 +130,9 @@
             </ul>
         </li>
     </ul>
+     -->
 </div>
 
-<!-- <div data-role="layout" data-id="mobile-tabstrip" data-show="showDemoLayout">
-    <header data-role="header">
-        <div data-role="navbar">
-            <a id="back-button" class="nav-button" data-align="left" href="components/home/view.html" data-role="backbutton">Back</a>
-            <span data-role="view-title"></span>
-            <a data-align="right" data-role="button" class="nav-button" data-icon="edit" href="components/profile/edit.html"></a>
-        </div>
-    </header>
-  
-</div>
- -->
 
 </body>
 </html>
