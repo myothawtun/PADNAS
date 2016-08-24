@@ -5,6 +5,7 @@ body {
 1) Common
 2) Signup
 3) Authentication
+4) Profile
 -----------------*/
 /* 1) Common
 -----------------*/
@@ -100,4 +101,19 @@ body {
 .signin-view .km-button.text-only {
     display: block;
     margin: 0 auto 1em;
+}
+
+/*-----------------
+4) Profile
+-----------------*/
+
+.activity-photo-upload button {
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+    margin-left: 10em;
+    margin-top: -13em;
+}
+.camera{
+    margin-bottom: 10em;
 }
