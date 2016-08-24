@@ -15,7 +15,7 @@
     width: 100%;
     display: table;
     border-collapse: separate;
-    border-spacing: 1em;
+    border-spacing: 0.5em;
 }
 
 #kendoUiMobileApp .button-group {
@@ -25,7 +25,7 @@
 #kendoUiMobileApp .button-group .km-button {
     display: table-cell;
     padding: .6em .8em;
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 #kendoUiMobileApp .button-group.button-group-vertical .km-button {
@@ -381,7 +381,8 @@
     border: 0;
     background-color: transparent;
     padding: 0;
-    font-size: 1.1em;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 
 #kendoUiMobileApp .multiple-select-list {

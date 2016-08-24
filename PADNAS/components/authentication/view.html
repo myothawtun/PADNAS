@@ -1,0 +1,78 @@
+<div data-role="view" data-title="Authentication" data-layout="main-nonav" data-model="app.authentication" data-show="app.authentication.onShow" data-after-show="app.authentication.afterShow">
+    <div class="signin-view">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                <li class="form-content-item">
+                    <div class="km-label-above imageListItem">
+                        <div class="align-center"><img src="resources/Man1.png" class="logo signinprofile"></div>
+                    </div>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="email" placeholder="EMail@padnas.com" data-bind="value: authenticationModel.email" required autofocus>
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="password" placeholder="Password" data-bind="value: authenticationModel.password" required>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group button-group-vertical">
+                <a data-role="button" class="primary" data-bind="events: { click: authenticationModel.signin }">Sign In</a>      
+
+            </div>
+            <div class="button-group">
+                               
+                 <a href="components/home/view.html" data-role="button" class="link align-left">Forgot Password?</a>
+
+                <a data-role="button" class="text-only align-right link" data-bind="events: { click: authenticationModel.toggleView }">Join now</a>
+
+            </div>
+
+            <span class="status" data-bind="text: authenticationModel.errorMessage"></span>
+        </form>
+    </div>
+    <div class="signup-view" style="display:none;">
+        <form>
+            <ul data-role="listview" data-style="inset">
+                 <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="text" placeholder="Display Name" data-bind="value: authenticationModel.displayName" required autofocus>
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="email" placeholder="EMail@padnas.com" data-bind="value: authenticationModel.email" required>
+                    </label>
+                </li>
+                <li>
+                    <label class="km-label-above km-label-hidden">
+                        <input type="password" placeholder="Password" data-bind="value: authenticationModel.password" required>
+                    </label>
+                </li>
+            </ul>
+            <div class="button-group button-group-vertical">
+                <a class="primary" data-role="button" data-bind="events: { click: authenticationModel.register }">Join now</a>
+                <a data-role="button" class="text-only link" data-bind="events: { click: authenticationModel.toggleView }">
+                    Already have an account? Sign In
+                </a>               
+            </div>
+
+            <span class="status" data-bind="text: authenticationModel.errorMessage"></span>
+        </form>
+    </div>
+    <div class="offline" align="center" style="display:none;">
+        You are currently offline. Before using this app in offline mode you must initialize it while you are online
+    </div>
+    <!-- START_CUSTOM_CODE_authenticationModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_authenticationModel -->
+
+    <!-- START_CUSTOM_CODE_authentication -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_authentication -->
+</div>

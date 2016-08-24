@@ -141,6 +141,34 @@
       "title": "Sign Up",
       "addToNavigation": true,
       "icon": "bookmarks"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "authentication",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "authenticationModel",
+          "dataProvider": "padnas",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Join now",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerLabel": "Register",
+          "registerRedirect": "home",
+          "gotoSigninLabel": "Sign In",
+          "enableLogout": false,
+          "enableRememberme": false,
+          "emailLabel": "Email",
+          "emailPlaceholder": "EMail@padnas.com",
+          "passwordLabel": "Password",
+          "passwordPlaceholder": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home"
+        }
+      ],
+      "title": "Authentication",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [

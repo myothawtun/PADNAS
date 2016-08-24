@@ -3,7 +3,8 @@ body {
 /* CONTENTS
 ---------------
 1) Common
-2)Signup
+2) Signup
+3) Authentication
 -----------------*/
 /* 1) Common
 -----------------*/
@@ -43,8 +44,17 @@ body {
      background:#fff;
     color:#000;
 }
-/* 2) Sign Up
+/*
+.km-nova .km-list>li {
+	padding: 0.5em 0.84em !important;
+}
+*/
+
+/*-------
+----------
+2) Sign Up
 -----------------*/
+
 .social-txt
 {
     float:left;
@@ -62,7 +72,7 @@ body {
  	border:none;
 
 }
-.km-nova .km-button, .km-nova .km-buttongroup .km-button.socialbtn
+.km-nova .km-buttongroup .km-button.socialbtn
 {    
     max-width:4em;
     max-height:1em;  
@@ -77,4 +87,17 @@ body {
 .signinprofile{
       border-radius: 50%;
       width: 35% !important;
+}
+
+/*-----------------
+3) Authentication
+-----------------*/
+
+.km-button.text-only {
+    background-color: transparent;
+}
+
+.signin-view .km-button.text-only {
+    display: block;
+    margin: 0 auto 1em;
 }
