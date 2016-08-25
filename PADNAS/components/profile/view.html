@@ -2,13 +2,15 @@
 <div id="profile-view" data-role="view" id="badges-profile" data-layout="main" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer"  data-bind="events: { show: onShow, hide: onHide }" class="profile-view">
     <header data-role="header">
         <div data-role="navbar">
-              <a id="back-button" class="nav-button" data-align="left" href="components/profile/setting.html" data-role="backbutton"></a>
+<!--               <a id="back-button" class="nav-button" data-align="left" href="components/profile/setting.html" data-role="backbutton"></a> -->
               <span data-role="view-title"></span>  
               <a id="get" class="button-icon button-save" data-role="button" data-align="right" href="components/profile/setting.html"></a>
              </div>
     </header>
         
        <form id="edit-profile-form">
+             <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
+                 <li>
      <img src="resources/default.jpg" height="300">       
            
  		 <div class="activity-photo-upload">
@@ -19,7 +21,7 @@
                 </label>
                <input type="file" class="k-valid" accept="image/*" id="profile-activity-photo">
             </div>
-  <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
+</li>
         <li>               
             Personal Information              
             <ul>
