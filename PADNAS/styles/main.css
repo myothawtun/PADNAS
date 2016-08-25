@@ -15,7 +15,7 @@
     width: 100%;
     display: table;
     border-collapse: separate;
-    border-spacing: 0.5em;
+    border-spacing: 1em;
 }
 
 #kendoUiMobileApp .button-group {
@@ -25,7 +25,7 @@
 #kendoUiMobileApp .button-group .km-button {
     display: table-cell;
     padding: .6em .8em;
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 #kendoUiMobileApp .button-group.button-group-vertical .km-button {
@@ -381,8 +381,7 @@
     border: 0;
     background-color: transparent;
     padding: 0;
-    font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1.1em;
 }
 
 #kendoUiMobileApp .multiple-select-list {
@@ -450,13 +449,49 @@
 #kendoUiMobileApp.km-flat .multiple-select-modal-window .multiple-select-item input[type=checkbox] {
     left: 0;
 }
+#kendoUiMobileApp .profile-view input {
+}
+#kendoUiMobileApp .icon,
+#kendoUiMobileApp .count {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
+
+#kendoUiMobileApp .button-icon {
+    vertical-align: middle;
+}
+#kendoUiMobileApp .button-icon, #kendoUiMobileApp .icon {
+    background-color: transparent;
+}
+#kendoUiMobileApp .button-icon, #kendoUiMobileApp .icon, #kendoUiMobileApp .button-social {
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: 42px auto;
+    height: 42px;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    width: 42px;
+}
+
+
+#kendoUiMobileApp .icon, #kendoUiMobileApp .count {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* photo */
+#kendoUiMobileApp .icon.icon-photo {
+    background-image: url("../resources/icon-photo.png");
+}
+#kendoUiMobileApp .button-icon.button-save {
+    background-image: url("../resources/icon-save.png");
+}
 /*End Multiple Selection Field*/
 
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
-
 
 /* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 
