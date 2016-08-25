@@ -1,138 +1,111 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-</head>
-<body>
-<div data-role="view" id="badges-profile" data-layout="main" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer">
+<div id="profile-view" data-role="view" id="badges-profile" data-layout="main" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer"  data-bind="events: { show: onShow, hide: onHide }" class="profile-view">
     <header data-role="header">
         <div data-role="navbar">
-             <span data-role="view-title"></span>  
-             <a data-align="right" data-role="button" class="nav-button" data-icon="settings" href="components/profile/setting.html"></a>
-        </div>
+              <a id="back-button" class="nav-button" data-align="left" href="components/profile/setting.html" data-role="backbutton"></a>
+              <span data-role="view-title"></span>  
+              <a id="get" class="button-icon button-save" data-role="button" data-align="right" href="components/profile/setting.html"></a>
+             </div>
     </header>
+        
        <form id="edit-profile-form">
-     <img src="resources/default.jpg" height="300">  
+     <img src="resources/default.jpg" height="300">       
+           
  		 <div class="activity-photo-upload">
-                <label for="activityPhoto">
+                <label for="profile-activity-photo">
                     <button id="choose-file-button">
-                        <span class="icon icon-photo">  <img class="camera" src="resources/icon-photo.png"></span>
+                        <span class="icon icon-photo"> </span>
                     </button>
                 </label>
-                <input class="camera" type="file" accept="image/*" id="activityPhoto"/>
+               <input type="file" class="k-valid" accept="image/*" id="profile-activity-photo">
             </div>
-    
-<!--      <div class="activity-photo-upload">
-                        <label for="profile-activity-photo">
-                            <button id="profile-choose-file-button">
-                                  <img class="camera" src="resources/icon-photo.png">
-                            </button>
-                        </label>
-                        <input type="file" id="profile-activity-photo" style="display: none">
-        </div> -->
-    
-            <ul data-role="listview" data-style="inset">
-             
-               
-                  <li>   
-                     <label class="km-label-above km-label-hidden">First name
-                         &nbsp;
-                        <input data-bind="value: user.firstname"  type="text">
-                    </label>
-                </li>
-                <li>
-                     <label class="km-label-above km-label-hidden">Last name
-                         &nbsp;
-                        <input data-bind="value: user.lastname"  type="text">
-                    </label>
-                </li>
-                <li>
-                    <label class="km-label-above km-label-hidden">Email address
-                        &nbsp;
-                        <input data-bind="value: user.emailaddress" type="email">
-                    </label>
-                </li>
-                   <li>
-                    <label class="km-label-above km-label-hidden">Education
-                        &nbsp;
-                        <input data-bind="value: user.education" type="text">
-                    </label>
-                </li>
-                 <li>
-                    <label class="km-label-above km-label-hidden">Position
-                        &nbsp;
-                        <input data-bind="value: user.Position" type="text">
-                    </label>
-                </li>
-                <li>
-                    <label class="km-label-above km-label-hidden">Company description
-                        &nbsp;
-                        <input data-bind="value: user.description" type="text">
-                    </label>
-                </li>
-                 <li>
-                    <label class="km-label-above km-label-hidden">Mobile phone
-                        &nbsp;
-                        <input data-bind="value: user.MobilePhone" type="text">
-                    </label>
-                </li>
-                   <li>
-                    <label class="km-label-above km-label-hidden">Company address
-                        &nbsp;
-                        <input data-bind="value: user.companyaddress" type="text">
-                    </label>
-                </li>
-                   <li>
-                    <label class="km-label-above km-label-hidden">Country name
-                        &nbsp;
-                        <input data-bind="value: user.name" type="text">
-                    </label>
-                </li>
-            </ul>
-        </div>
-    </form>
-    
-    
-<!--     <img src="resources/Woman.png" class="km-thumbnail" style="	width: 10em;height: 10em;margin: 2em auto;display: block;float: none;">
-    
-    <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
+  <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
         <li>               
-            Profile  
-            
+            Personal Information              
             <ul>
-                <li>John Sem</li>
-                <li>john@padnas.com</li>
+                <li> 
+                    <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.firstname" placeholder="First name" type="text">
+                    </label>
+                </li>
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.lastname" placeholder="Last name" type="text">
+                    </label>
+                </li>
+                 <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.joindate" placeholder="Join date" type="text">
+                    </label>
+                </li> 
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.email" placeholder="Email" type="email">
+                    </label>
+                </li> 
+                 <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.mobileph" placeholder="Cell phone" type="text">
+                    </label>
+                </li>  
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.currently" placeholder="Currently work" type="text">
+                    </label>
+                </li>
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.country" placeholder="Country" type="text">
+                    </label>
+                </li> 
             </ul>
         </li>
+<!--         &nbsp; -->
         <li>
             Education 
             <ul>
-                <li>B.E(IS)</li>
-                <li>M.E</li>
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.school" placeholder="School" type="text">
+                    </label>
+                </li> 
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.degree" placeholder="Degree" type="text">
+                    </label>
+                </li> 
             </ul>
         </li>
         <li>
-            Company's Profile
+            Company's Information
             <ul>
-                <li>Software Engineer</li>
-                <li>IT Software Development and outsourcing services</li>
-             
+                <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.comaddress" placeholder="Company address" type="text">
+                    </label>
+                </li>
+              
+       		    <li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.comaddress" placeholder="Work phone" type="text">
+                    </label>
+                </li>
+         		<li>
+                      <label class="km-label-above km-label-hidden">
+                        <input data-bind="value: user.comaddress" placeholder="Fax number" type="text">
+                    </label>
+                </li>
+				<li>
+                      <label class="km-label-above km-label-hidden">
+                          <textarea data-bind="value: user.description" placeholder="Company description/ What you do" type="text"></textarea>                 
+                      </label>
+                </li>
+                <li>   </li>
             </ul>
         </li>
-        <li>
-            Company's Contact 
-            <ul>
-                <li>+959797283742</li>
-                <li>+9518610275</li>        
-                <li>216/222, Bo Myat Tun Street, Suite (8F), Bo Myat Tun Housing, Pazaungdaung Township </li>
-                <li>Yangon, Myanmar </li>
-                <li></li>
-            </ul>
-        </li>
+
     </ul>
-     -->
+          
+        </div>
+    </form>
 </div>
-
-
-</body>
-</html>
