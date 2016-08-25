@@ -3,7 +3,9 @@ body {
 /* CONTENTS
 ---------------
 1) Common
-2)Signup
+2) Signup
+3) Authentication
+4) Profile
 -----------------*/
 /* 1) Common
 -----------------*/
@@ -13,10 +15,10 @@ body {
 /*     background:#FA9A50; */
 	border-top:1px solid #e9eaee;
 	background: #FFFF00; /* For browsers that do not support gradients */    
-   background: -webkit-linear-gradient(#4dffb8,  #ff6600); /* For Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(#4dffb8,#ff9933); /* For Opera 11.1 to 12.0 */
-   background: -moz-linear-gradient(#4dffb8, #ff9933); /* For Firefox 3.6 to 15 */
-    background: linear-gradient( #4dffb8, #ff9933); /* Standard syntax */
+   background: -webkit-linear-gradient(#4DFFB8, #FF6600); /* For Safari 5.1 to 6.0 , left top, */
+   background: -o-linear-gradient(#4DFFB8, #FF6600); /* For Opera 11.1 to 12.0, bottom right, */
+   background: -moz-linear-gradient(#4DFFB8, #FF6600); /* For Firefox 3.6 to 15, bottom right,  */
+    background: linear-gradient(#4DFFB8, #FF6600); /* Standard syntax, to bottom right,  */
 	padding:43px 10px 40px;
 	color:#ffffff;
 }
@@ -43,8 +45,17 @@ body {
      background:#fff;
     color:#000;
 }
-/* 2) Sign Up
+/*
+.km-nova .km-list>li {
+	padding: 0.5em 0.84em !important;
+}
+*/
+
+/*-------
+----------
+2) Sign Up
 -----------------*/
+
 .social-txt
 {
     float:left;
@@ -62,7 +73,7 @@ body {
  	border:none;
 
 }
-.km-nova .km-button, .km-nova .km-buttongroup .km-button.socialbtn
+.km-nova .km-buttongroup .km-button.socialbtn
 {    
     max-width:4em;
     max-height:1em;  
@@ -78,3 +89,20 @@ body {
       border-radius: 50%;
       width: 35% !important;
 }
+
+/*-----------------
+3) Authentication
+-----------------*/
+
+.km-button.text-only {
+    background-color: transparent;
+}
+
+.signin-view .km-button.text-only {
+    display: block;
+    margin: 0 auto 1em;
+}
+
+/*-----------------
+4) Profile
+-----------------*/
