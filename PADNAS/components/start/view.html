@@ -18,39 +18,16 @@
              <div class="button-group">
                 <a class="secondary" href="components/signIn/view.html" data-role="button">Sign In</a>
             </div>
-            
-            <div class="button-group">
-                <a class="primary" href="components/authentication/view.html" data-role="button">Join now</a>
-            </div>
-             <div class="button-group">
-                <a class="secondary" href="components/authentication/view.html" data-role="button">Sign In</a>
-            </div>
-
+      
         </form>
         <!-- START_CUSTOM_CODE_startViewModel -->
         <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
- 
 
         <!-- END_CUSTOM_CODE_startViewModel -->
     </div>
-
-    <a data-role="button" data-bind="click:hello ">Show description</a>
-    
 
     <!-- START_CUSTOM_CODE_startView -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
 
     <!-- END_CUSTOM_CODE_startView -->
 </div>
-
-<script>
-    var viewModel = kendo.observable({
-       
-        hello: function() {
-            // show the span by setting isDescriptionShown to true
-       this.alert("Something");
-        }
-    });
-
-    kendo.bind($("#firstpage"), viewModel);
-</script>
