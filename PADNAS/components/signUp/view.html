@@ -1,4 +1,4 @@
-<div data-role="view" data-title="Sign Up" data-layout="main-nonav" data-model="app.signUp" data-show="app.signUp.onShow" data-after-show="app.signUp.afterShow">
+<div data-role="view" data-title="Join now" data-layout="main-nonav" data-model="app.signUp" data-show="app.signUp.onShow" data-after-show="app.signUp.afterShow">
    <header data-role="header">
         <div data-role="navbar">
             <a id="back-button" class="nav-button" data-align="left" href="components/start/view.html" data-role="backbutton">Back</a>
@@ -11,20 +11,20 @@
                 <li class="form-content-item">
                     <label class="km-label-above km-label-hidden">
                         &nbsp;
-                        <input data-bind="value: signUpviewModel.fields.txtName" placeholder="First name" type="text">
+                        <input data-bind="value: signUpviewModel.fields.txtName" placeholder="Username" type="text">
                     </label>
                 </li>
                 
-                <li class="form-content-item">
+<!--                 <li class="form-content-item">
                     <label class="km-label-above km-label-hidden">
                         &nbsp;
                         <input data-bind="value: signUpviewModel.fields.txtLastName" placeholder="Last name" type="text">
                     </label>
-                </li>
+                </li> -->
                  <li class="form-content-item">
                     <label class="km-label-above km-label-hidden">
                         &nbsp;
-                        <input data-bind="value: signUpviewModel.fields.txtLastName" placeholder="Email" type="email">
+                        <input data-bind="value: signUpviewModel.fields.txtLastName" placeholder="EMail@padnas.com" type="email">
                     </label>
                 </li>
                 <li class="form-content-item">
@@ -34,12 +34,14 @@
                     </label>
 
                 </li>
-            </ul>
+            </ul>        
 
-            <div class="button-group">
+            <div class="button-group button-group-vertical">
                 <a href="components/home/view.html" class="primary" data-role="button" data-bind="">Join now</a>
+
+                <a class="text-only link" href="components/signIn/view.html" data-role="button">Already have an account? Sign In</a>
             </div>
-            
+            <br/><br/>
              <p class="social-txt">
                  Connect With:       
               
@@ -47,11 +49,12 @@
             <div class="scocial-btngroup">
            <ul data-role="buttongroup">
    			
-            <li><a href="#" data-role="button" class="socialbtn"><img src="resources/facebook.png" class="social-icon"/></a></li>
+            <li><a  id="fbBtn" data-role="button" class="socialbtn"><img src="resources/facebook.png" class="social-icon"/></a></li>
     		<li><a href="#" data-role="button" class="socialbtn"><img src="resources/twitter.png" class="social-icon"/></a></li>
   			<li><a href="#" data-role="button" class="socialbtn"><img src="resources/linkedin.png" class="social-icon"/></a></li>
   
 			</ul>  
+            
             </div>
             
         </form>
@@ -65,4 +68,7 @@
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
 
     <!-- END_CUSTOM_CODE_signUpview -->
+<script>
+    app.signUp.initialize();
+</script>
 </div>

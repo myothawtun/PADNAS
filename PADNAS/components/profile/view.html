@@ -1,27 +1,30 @@
 
-<div id="profile-view" data-role="view" id="badges-profile" data-layout="main" data-title="Profile" data-layout="mobile-tabstrip" data-show="addTimer" data-hide="removeTimer"  data-bind="events: { show: onShow, hide: onHide }" class="profile-view">
+<div data-role="view" id="edit-listview" data-title="Profile" data-init="listViewInit">
     <header data-role="header">
         <div data-role="navbar">
-<!--               <a id="back-button" class="nav-button" data-align="left" href="components/profile/setting.html" data-role="backbutton"></a> -->
-              <span data-role="view-title"></span>  
-              <a id="get" class="button-icon button-save" data-role="button" data-align="right" href="components/profile/setting.html"></a>
-             </div>
+      		  <span data-role="view-title"></span>  
+              <a  class="button-icon button-save" data-role="button" data-align="right" href="components/profile/view.html"></a>
+        </div>
     </header>
-        
-       <form id="edit-profile-form">
-     <ul data-role="listview" class="nav-button" data-style="inset" data-type="group">
-     <img src="resources/default.jpg" height="300">       
-           <li>
- 		 <div class="activity-photo-upload">
-                <label for="profile-activity-photo">
-                    <button id="choose-file-button">
-                        <span class="icon icon-photo"> </span>
-                    </button>
-                </label>
-               <input type="file" class="k-valid" accept="image/*" id="profile-activity-photo">
-            </div>
-  </li>
-        <li>               
+  
+<form id="edit-profile-form">
+        <div class="content">
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li class="content-picture">
+                 
+                    <img src="resources/default.jpg" class="defpicture" data-responsive id="preview" height="300" >
+
+                    <div class="activity-photo-upload">
+                        <label for="profile-activity-photo">
+                            <button id="profile-choose-file-button">
+                                <span class="icon icon-photo"></span>
+                            </button>
+                        </label>
+                        <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid" style="display: none">
+                    </div>
+                </li>
+               
+                <li>               
             Personal Information              
             <ul>
                 <li> 
@@ -61,8 +64,8 @@
                 </li> 
             </ul>
         </li>
-<!--         &nbsp; -->
-        <li>
+               
+                <li>
             Education 
             <ul>
                 <li>
@@ -104,9 +107,9 @@
                 <li>   </li>
             </ul>
         </li>
-
-    </ul>
-          
+                
+            </ul>
         </div>
     </form>
 </div>
+    
