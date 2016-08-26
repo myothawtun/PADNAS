@@ -107,6 +107,14 @@ body {
 4) Profile
 -----------------*/
 
+.content-picture img {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 250px;
+}
+.content-picture img {
+    display: block;
+}
 .activity-photo-upload button {
     background-color: transparent;
     border: 0 none;
@@ -124,17 +132,17 @@ body {
     width: 42px;
 }
 
-input[type="file"] {
-/*     display: none; */
-}
-
 .km-group-title{
-    background-color:#708090 !important;
+    background-color:#DEE0E1 !important;
 }
 .km-text{
     margin-bottom: 0.1em;
     margin-top: -0.3em;
 /*     color:#EDEDED; */
     font-size:18px;
+}
+
+.defpicture{
+    margin-top:-2em;
 }
 /* for save */

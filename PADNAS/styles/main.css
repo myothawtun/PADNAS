@@ -330,6 +330,7 @@
     color: transparent;
     opacity: 0;
     cursor: pointer;
+    display: none;
 }
 
 #kendoUiMobileApp .file-upload-name {
@@ -487,6 +488,10 @@
 }
 #kendoUiMobileApp .button-icon.button-save {
     background-image: url("../resources/icon-save.png");
+}
+
+input[type="file"] {
+/*     display: none;  */
 }
 /*End Multiple Selection Field*/
 
