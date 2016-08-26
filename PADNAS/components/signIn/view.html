@@ -17,13 +17,13 @@
                 <li>
                      <label class="km-label-above km-label-hidden">
                          &nbsp;
-                        <input data-bind="value: signInModel.fields.email" placeholder="Username" type="email" required autofocus>
+                        <input data-bind="value: signInModel.fields.email" placeholder="EMail@padnas.com" type="email">
                     </label>
                 </li>
                 <li>
                     <label class="km-label-above km-label-hidden">
                         &nbsp;
-                        <input data-bind="value: signInModel.fields.password" placeholder="Password" type="password" required >
+                        <input data-bind="value: signInModel.fields.password" placeholder="Password" type="password">
                     </label>
                 </li>
             </ul>
@@ -32,14 +32,13 @@
 
             </div>
              
-
-            <div class="button-group">
-                               
-                 <a href="components/home/view.html" data-role="button" class="link align-left">Forgot Password?</a>
-
-                <a class="text-only link position-right" href="components/signUp/view.html" data-role="button">Join now</a>
-			
-            </div>
+            <div class="button-group editableListItem"> 
+           
+                <a href="components/home/view.html" data-role="button" class="link">Forgot Password?</a>
+                
+                    <a href="components/signUp/view.html" data-role="button" class="link position-right">Join now</a>
+               
+            </div>          
             <span class="status" data-bind="text: signInModel.errorMessage"></span>
         </form>
     </div>
