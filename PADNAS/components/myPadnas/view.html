@@ -1,23 +1,28 @@
-<div data-role="view" data-title="My Padnas" data-layout="main" data-model="app.myPadnas" data-show="app.myPadnas.onShow" data-after-show="app.myPadnas.afterShow">
-    <div id="myPadnasModel" class="form-view">
-        <form>
-            <ul class="form-content" data-role="listview" data-style="inset">
-                <li>
-                    <h1>Welcome From My Padnas</h1>
-                </li>
-            </ul>
 
-            <div class="button-group">
+<div data-role="view" id="edit-listview" data-layout="main" data-title="My Padnas" data-init="listViewInit">
+    <header data-role="header">
+        <div data-role="navbar">
+             <a id="back-button" class="nav-button" data-align="left" href="components/profile/view.html" data-role="backbutton">Back</a>
+             <span data-role="view-title"></span>
+        </div>
+    </header>
+ <div class="content-picture">
+    <img src="resources/default.jpg" class="defpicture" data-responsive id="preview" height="300" >
+ </div>
+
+    <div id="editableListForm2" class="form-view">
+        <form id="activity-form">
+           
+            <div class="activity-photo-upload">
+                <label for="activityPhoto">
+                    <button id="choose-file-button">
+                        <span class="icon icon-photo"></span>
+                    </button>
+                </label>
+                <input type="file" accept="image/*" id="activityPhoto"/>
             </div>
         </form>
-        <!-- START_CUSTOM_CODE_myPadnasModel -->
-        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-        <!-- END_CUSTOM_CODE_myPadnasModel -->
-    </div>
-
-    <!-- START_CUSTOM_CODE_myPadnas -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_myPadnas -->
+    </div>    
 </div>
+
+    
