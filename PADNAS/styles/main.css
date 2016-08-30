@@ -490,8 +490,15 @@
     background-image: url("../resources/icon-save.png");
 }
 
-input[type="file"] {
-  display: none;  
+#kendoUiMobileApp .profile-view .km-listview .content-picture {
+    padding: 0;
+}
+
+#kendoUiMobileApp.km-flat form .km-list > li {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    border: 0;
+    background-color: transparent;
 }
 /*End Multiple Selection Field*/
 

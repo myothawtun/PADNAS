@@ -2,27 +2,22 @@
 <div data-role="view" id="edit-listview" data-layout="main" data-title="My Padnas" data-init="listViewInit">
     <header data-role="header">
         <div data-role="navbar">
-             <a id="back-button" class="nav-button" data-align="left" href="components/profile/view.html" data-role="backbutton">Back</a>
+<!--              <a id="back-button" class="nav-button" data-align="left" href="components/profile/view.html" data-role="backbutton">Back</a> -->
              <span data-role="view-title"></span>
         </div>
     </header>
  <div class="content-picture">
-    <img src="resources/default.jpg" class="defpicture" data-responsive id="preview" height="300" >
+    <img src="resources/default.jpg" data-responsive id="preview-edit" width="100%"  >
  </div>
 
-    <div id="editableListForm2" class="form-view">
-        <form id="activity-form">
-           
-            <div class="activity-photo-upload">
-                <label for="activityPhoto">
-                    <button id="choose-file-button">
-                        <span class="icon icon-photo"></span>
-                    </button>
-                </label>
-                <input type="file" accept="image/*" id="activityPhoto"/>
-            </div>
-        </form>
-    </div>    
+      <div data-role="content">
+        <div data-role="tabstrip" id="badges-tabs">
+            <a href="components/myPadnas/view.html" id="capturePhotoButton" data-icon="recents">Recent Work</a>
+            <a href="components/profile/view.html" data-icon="edit">Edit Profile</a>
+            <a href="components/profile/padnasPhoto.html" data-icon="camera">Photos of you</a>
+            <a href="components/friendList/view.html" data-icon="contacts">Friends</a>
+        </div>
+    </div>
 </div>
 
     

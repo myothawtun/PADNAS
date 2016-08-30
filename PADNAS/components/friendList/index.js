@@ -1,25 +1,29 @@
 'use strict';
 
-app.notification = kendo.observable({
+app.friendList = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_notification
+// START_CUSTOM_CODE_friendList
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_notification
+// END_CUSTOM_CODE_friendList
 (function(parent) {
-    var notificationModel = kendo.observable({
+    var friendListModel = kendo.observable({
         fields: {
-            heading: '',
-        }
+            hyperlink: '',
+            txtPassword: '',
+            textField: '',
+            imageLogin: '',
+        },
+        submit: function() {}
     });
 
-    parent.set('notificationModel', notificationModel);
-})(app.notification);
+    parent.set('friendListModel', friendListModel);
+})(app.friendList);
 
-// START_CUSTOM_CODE_notificationModel
+// START_CUSTOM_CODE_friendListModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
-// END_CUSTOM_CODE_notificationModel
+// END_CUSTOM_CODE_friendListModel

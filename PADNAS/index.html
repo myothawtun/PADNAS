@@ -11,13 +11,13 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/customStyle.css" rel="stylesheet">
 	<link href="styles/kendo.silver.mobile.min.css" rel="stylesheet" type="text/css" />
-    <script src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
     <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
     <script src="bower_components/everlive/min/everlive.all.min.js"></script>
     <script src="dataProviders/padnas.js"></script>
-  
+	<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
@@ -28,6 +28,9 @@
     <script src="components/start/index.js"></script>
     <script src="components/home/index.js"></script>
     <script src="components/myPadnas/index.js"></script>
+    <script src="components/nearBy/index.js"></script>
+    <script src="components/notification/index.js"></script>
+    
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
@@ -37,10 +40,9 @@
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
                 <a href="components/home/view.html" data-icon="home"></a>
-            <a href="components/myPadnas/view.html" data-icon="contacts"></a> 
-               
-<!--             <a href="components/profile/view.html" data-icon="globe"></a>  -->
-
+                <a href="components/myPadnas/view.html" data-icon="contacts"></a> 
+                <a href="components/nearBy/view.html" data-icon="wifi"></a> 
+ 				<a href="components/notification/view.html" data-icon="globe"></a> 
             </div>
             <div id="navigation-container-more" style="display: none">
             </div>

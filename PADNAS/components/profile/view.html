@@ -1,19 +1,20 @@
 
-<div data-role="view" id="edit-listview" data-title="Profile" data-init="listViewInit">
+<div data-role="view" id="edit-listview"  data-layout="main" data-title="Profile" data-init="listViewInit" class="profile-view">
     <header data-role="header">
         <div data-role="navbar">
+              <a id="back-button" class="nav-button" data-align="left" href="components/myPadnas/view.html" data-role="backbutton">Back</a>
       		  <span data-role="view-title"></span>  
               <a  class="button-icon button-save" data-role="button" data-align="right" href="components/profile/view.html"></a>
         </div>
     </header>
   
+
 <form id="edit-profile-form">
         <div class="content">
-            <ul data-role="listview" data-style="inset" data-type="group">
-                <li class="content-picture">
-                 
-                    <img src="resources/default.jpg" class="defpicture" data-responsive id="preview" height="300" >
-
+           <ul data-role="listview" data-style="inset">
+               <li class="content-picture">    
+               <img src="resources/default.jpg" class="defpicture" data-responsive id="preview" width="100%" height="300" >
+           
                     <div class="activity-photo-upload">
                         <label for="profile-activity-photo">
                             <button id="profile-choose-file-button">
@@ -22,8 +23,9 @@
                         </label>
                         <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid" style="display: none">
                     </div>
-                </li>
-               
+               </li>
+            </ul>
+                 <ul data-role="listview" data-style="inset" data-type="group">
                 <li>               
             Personal Information              
             <ul>
