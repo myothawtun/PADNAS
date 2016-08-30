@@ -1,5 +1,6 @@
 {
   "CorePlugins": [
+    "com.oauthio.plugins.oauthio@0.2.6",
     "cordova-plugin-battery-status",
     "cordova-plugin-camera",
     "cordova-plugin-contacts",
