@@ -49,9 +49,9 @@
             <div class="scocial-btngroup">
            <ul data-role="buttongroup">
    			
-            <li><a  id="fbBtn" data-role="button" class="socialbtn"><img src="resources/facebook.png" class="social-icon"/></a></li>
-    		<li><a href="#" data-role="button" class="socialbtn"><img src="resources/twitter.png" class="social-icon"/></a></li>
-  			<li><a href="#" data-role="button" class="socialbtn"><img src="resources/linkedin.png" class="social-icon"/></a></li>
+            <li><button  data-role="button" class="socialbtn" data-bind="click: loginWithFacebook"><img src="resources/facebook.png" class="social-icon"/></button></li>
+    		<li><button  data-role="button" class="socialbtn" data-bind="click: loginWithTwitter"><img src="resources/twitter.png" class="social-icon"/></button></li>
+  			<li><button  data-role="button" class="socialbtn" data-bind="click: loginwithLinkedIn"><img src="resources/linkedin.png" class="social-icon"/></button></li>
   
 			</ul>  
             
@@ -68,7 +68,5 @@
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
 
     <!-- END_CUSTOM_CODE_signUpview -->
-<script>
-    app.signUp.initialize();
-</script>
+
 </div>
