@@ -5,17 +5,22 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
-
-    <link href="styles/overrides.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
+    <link  rel="stylesheet" href="kendo/styles/kendo.common.min.css"/>
+    <link  rel="stylesheet" href="kendo/styles/kendo.rtl.min.css"/>   
+    <link  rel="stylesheet" href="kendo/styles/kendo.silver.min.css"/>
+    <link  rel="stylesheet" href="kendo/styles/kendo.mobile.all.min.css"/>
     <link href="styles/customStyle.css" rel="stylesheet">
-	<link href="styles/kendo.silver.mobile.min.css" rel="stylesheet" type="text/css" />
+    
+  	<link href="styles/overrides.css" rel="stylesheet"> 
+    <link href="styles/main.css" rel="stylesheet">
+
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
     <script src="app.js"></script>
-    <script src="bower_components/everlive/min/everlive.all.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="kendo/js/jquery-1.9.1.min.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+<!--     <script src="bower_components/everlive/min/everlive.all.min.js"></script> -->
     <script src="dataProviders/padnas.js"></script>
   
 </head>
@@ -38,7 +43,7 @@
         </header>
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-              <a href="components/home/view.html" data-icon="home"></a>
+              <a href="components/home/view.html" data-icon="home"><br/></a>
                 <a href="components/myPadnas/view.html" data-icon="contacts"></a> 
                 <a href="components/nearBy/view.html" data-icon="wifi"></a> 
  				<a href="components/notification/view.html" data-icon="globe"></a> 

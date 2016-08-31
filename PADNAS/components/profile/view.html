@@ -7,7 +7,9 @@
               <a  class="button-icon button-save" data-role="button" data-align="right" href="components/profile/view.html"></a>
         </div>
     </header>
-  
+  <div class="demo-section k-content">
+               			   <input type="file" name="files" id="upload" data-icon="contacts"/>
+   </div>
 
 <form id="edit-profile-form">
         <div class="content">
@@ -21,12 +23,13 @@
                                 <span class="icon icon-photo"></span>
                             </button>
                         </label>
-                        <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid" style="display: none">
+                        
+<!--                         <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid" style="display: none"> -->
                     </div>
                </li>
             </ul>
-                 <ul data-role="listview" data-style="inset" data-type="group">
-                <li>               
+            <ul data-role="listview" data-style="inset" data-type="group">
+            <li>               
             Personal Information              
             <ul>
                 <li> 
@@ -111,7 +114,20 @@
         </li>
                 
             </ul>
+            
         </div>
+  
     </form>
+                   <script>
+                $(document).ready(function() {
+                    $("#upload").kendoUpload({
+                        async: {
+                            saveUrl: "save",
+                            removeUrl: "remove",
+                            autoUpload: true
+                        }
+                    });
+                });
+            </script>
 </div>
     
