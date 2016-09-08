@@ -139,12 +139,11 @@ body {
 .km-text{
     margin-bottom: 0.1em;
     margin-top: -0.3em;
-/*     color:#EDEDED; */
-    /*font-size:18px;*/
 }
+/* 
 input[type="file"] {
   display: none;  
-}
+} */
 .content-picture {
     margin: 0 -2em;
     overflow: hidden;

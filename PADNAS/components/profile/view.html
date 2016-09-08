@@ -1,5 +1,5 @@
 
-<div data-role="view" id="edit-listview"  data-layout="main" data-title="Profile" data-init="listViewInit" class="profile-view">
+<div data-role="view" id="edit-listview"  data-layout="main" data-title="Profile" data-model="app.profile" data-init="listViewInit" class="profile-view">
     <header data-role="header">
         <div data-role="navbar">
               <a id="back-button" class="nav-button" data-align="left" href="components/myPadnas/view.html" data-role="backbutton">Back</a>
@@ -7,10 +7,22 @@
               <a  class="button-icon button-save" data-role="button" data-align="right" href="components/profile/view.html"></a>
         </div>
     </header>
-  <div class="demo-section k-content">
-               			   <input type="file" name="files" id="upload" data-icon="contacts"/>
-   </div>
+    <div class="demo-section k-content">
+                  <input type="file" name="files" id="upload" data-icon="contacts"/>
+          </div>
+            <script>
+                $(document).ready(function() {
+                    $("#upload").kendoUpload({
+                        async: {
+                            saveUrl: "save",
+                            removeUrl: "remove",
+                            autoUpload: true
+                        }
+                    });
+                });
+            </script>
 
+   
 <form id="edit-profile-form">
         <div class="content">
            <ul data-role="listview" data-style="inset">
@@ -23,9 +35,10 @@
                                 <span class="icon icon-photo"></span>
                             </button>
                         </label>
-                        
-<!--                         <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid" style="display: none"> -->
-                    </div>
+                       <input type="file" accept="image/*" id="profile-activity-photo"  class="k-valid">
+                   </div>
+                                       
+       
                </li>
             </ul>
             <ul data-role="listview" data-style="inset" data-type="group">
@@ -118,16 +131,6 @@
         </div>
   
     </form>
-                   <script>
-                $(document).ready(function() {
-                    $("#upload").kendoUpload({
-                        async: {
-                            saveUrl: "save",
-                            removeUrl: "remove",
-                            autoUpload: true
-                        }
-                    });
-                });
-            </script>
+            
 </div>
     
